@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Luis Trichez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!--Barra Lateral-->
+    <aside>
+        <div class="profile-photo">
+            <img src="Foto perfil.jpg" alt="Luis Trichez">
+        </div>
+        <div id="div_linha">
+            <p></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="scroll-link"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="#experience" class="scroll-link"><i class="fas fa-briefcase"></i> Experiência</a></li>
+                <li><a href="#projects" class="scroll-link"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+                <li><a href="#education" class="scroll-link"><i class="fas fa-graduation-cap"></i> Educação</a></li>
+                <li><a href="#contato" class="scroll-link"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="#resumo" class="scroll-link"><i class="fas fa-file-alt"></i> Resumo</a></li>
+            </ul>
+        </nav>
+
+        <div class="dark-mode">
+            <button id="open-overlay-btn">Clique aqui</button>
+        </div>
+        
+        
+        <div id="dark-mode-overlay">
+            <div class="dark-mode-content">
+                
+                <p>
+                    "O que fazemos sem obrigação é o que define quem somos."</p>
+                <button id="close-overlay-btn">Fechar</button>
+            </div>
+        </div>
+        <a href="#about" id="scroll-to-top" class="scroll-link">
+            <i class="fas fa-caret-up"></i>
+        </a>
+    </aside>
+
+    <!--Aqui é bloco das sessões-->
+    <main>
+
+        <section id="about" class="about-section">
+            <div class="full-width-block">
+                <h1>Olá, eu sou <span class="name" id="myName">Luis Henrique Trichez</span></h1>
+                <p>Um Estudante| Profissional auto-motivado, ágil, programador apaixonado com uma mente curiosa que
+                    gosta
+                    de resolver problemas complexos e desafiadores do mundo real.</p>
+
+                <div class="social-buttons">
+                    <a href="https://br.linkedin.com/in/luis-henrique-trichez-4282061a2" target="_blank" class="social-button linkedin"
+                        onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/luishenriquetrichez" target="_blank" class="social-button github"
+                        onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="other-buttons">
+                    <button class="contact-me-button" onmouseover="moveButton(this)"
+                        onmouseout="resetButton(this)">Meu Contato</button>
+                    <button class="read-more-button" onmouseover="moveButton(this)" onmouseout="resetButton(this)">Read
+                        More</button>
+                </div>
+                <div id="site_desenvolvido">
+                    <p>Site desenvolvido por Luis Henrique Trichez. Ano 2024 <span class="arrow-down"></span></p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Nova seção -->
+        <section id="experience">
+            <div class="experience-description">
+                <div class="my-experience">
+                    <div class="experience-heading">
+                        <h2 id="texto_experience">Minha<br>Experiência</h2>
+                        <p id="texto_minha_exp">
+                            Minha jornada profissional foi marcada por uma evolução constante e significativa. Comecei como office boy, onde desenvolvi habilidades de comunicação, gestão de tempo e organização. Em seguida, como analista fiscal e contábil, aprofundei meu conhecimento em gestão empresarial e tributação. Por fim, como desenvolvedor, integrei minhas habilidades anteriores com a tecnologia da informação, tornando-me capaz de oferecer soluções inovadoras através da programação e automação de processos. Essa trajetória me permitiu não apenas crescer profissionalmente, mas também agregar valor às empresas por meio de uma abordagem multidisciplinar e adaptável.</p>
+                    </div>
+                </div>
+                <div class="experiences">
+                    <div class="experience-content block1">
+                        <div class="experience-info">
+                            <img src="Logojpg.jpg" alt="Imagem da Experiência">
+                            <div class="experience-text">
+                                <h3 id="h3_exp">Contasoft Contabilidade</h3>
+                                <h4 id="sub_experiencia">Desenvolvedor\Ti</h4>
+                                <hr id="linha_exp">
+                                <p id="texto_experiencias">Como desenvolvedor, dei um passo adiante após adquirir as habilidades necessárias em áreas anteriores. Combinei meu conhecimento em administração fiscal e contábil com minha aptidão em tecnologia da informação para oferecer soluções valiosas às empresas.</p>
+                                <p id="texto_experiencias">Ao longo do tempo, concentrei-me no aprimoramento das habilidades de programação e na capacidade de mapear e automatizar processos. Essa evolução me permitiu criar soluções mais eficientes e inovadoras, proporcionando às empresas uma vantagem competitiva significativa</p>
+                                <hr id="linha_exp">
+                                <h4 id="data_experiencias">Junho 2023 - Atual | Marau - RS</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-content block2">
+                        <div class="experience-info">
+                            <img src="Logojpg.jpg" alt="Imagem da Experiência 2">
+                            <div class="experience-text">
+                                <h3 id="h3_exp">Contasoft Contabilidade</h3>
+                                <h4 id="sub_experiencia">Analista Fiscal/Contabil</h4>
+                                <hr id="linha_exp">
+                                <p id="texto_experiencias">Como analista fiscal e contábil, fui encarregado de administrar as questões fiscais e contábeis de um número específico de empresas. Minhas responsabilidades incluíam a apuração de impostos, lançamentos contábeis, emissão de notas fiscais e muito mais.</p>
+                                <p id="texto_experiencias">Ao longo dessa jornada, desenvolvi uma compreensão profunda dos processos contábeis e fiscais, além de aprimorar minhas habilidades de gestão e resolução de problemas. Essa experiência não apenas solidificou meu conhecimento técnico, mas também me preparou para enfrentar desafios empresariais de forma proativa e eficaz.</p>
+                                <hr id="linha_exp">
+                                <h4 id="data_experiencias">Outubro 2021 - Junho 2023 | Marau - RS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-content block2">
+                        <div class="experience-info">
+                            <img src="Logojpg.jpg" alt="Imagem da Experiência 2">
+                            <div class="experience-text">
+                                <h3 id="h3_exp">Contasoft Contabilidade</h3>
+                                <h4 id="sub_experiencia">Oficce Boy</h4>
+                                <hr id="linha_exp">
+                                <p id="texto_experiencias">Durante meu período como office boy, fui responsável pela entrega e arquivamento de documentos. Essa experiência me proporcionou oportunidades valiosas de comunicação e aprimorou minhas habilidades de gestão de tempo e organização. </p>
+                                <p id="texto_experiencias">
+                                    </p>
+                                <hr id="linha_exp">
+                                <h4 id="data_experiencias">Janeiro 2021 - Outubro 2021 | Marau - RS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Nova seção -->
+        <section id="projects">
+            
+            <div class="project">
+                <div class="project-content">
+                    <h3>Tomador ISS PM Marau</h3>
+                    <p>Este projeto é uma ferramenta desenvolvida em Python que automatiza diversas tarefas relacionadas a processos fiscais na Prefeitura de Marau. Utilizando a biblioteca Selenium, o algoritmo acessa o site da prefeitura, faz o download de notas tomadas e prestadas, salva relatórios em PDF em pastas específicas, além de realizar outras funcionalidades como a geração de relatório de conferência, declaração de tomador ISS, verificação e emissão de guias de ISS. Tira o trabalho manual dos colaboradores, garantindo mais eficiência nos processos.</p>
+                    <div class="project-tech-icons">
+                        <img src="logopython.jpg" alt="python" class="tech-icon">
+                        <img src="selenium.jpg" alt="selenium" class="tech-icon">
+                        <img src="b924e3e38ede4aeb9f7157855d8c0ea5.png" alt="openxl" class="tech-icon">
+                    </div>
+                    <a href="#" class="button">Confira!</a> <a href="https://github.com/luishenriquetrichez?tab=repositories" target="_blank" class="social-button github"
+                    onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-image">
+                    <img src="tomador.jpg" alt="Descrição do Projeto 2">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Algoritmo Modificador de Arquivo SPED</h3>
+                    <p>O Modifica_Sped_Fiscal é um algoritmo desenvolvido em Python 3.12 com o objetivo de automatizar e otimizar o processo de tratamento de dados fiscais em empresas. Ele extrai informações de notas fiscais no formato XML, realiza um tratamento de dados e, em seguida, sobrescreve o arquivo original SPED (Sistema Público de Escrituração Digital) com as informações corretas e nos campos adequados. Isso garante mais segurança, precisão e agilidade nos processos da empresa, facilitando a importação correta dos dados para o sistema contábil.</p>
+                    <div class="project-tech-icons">
+                        <img src="OIP.jpg" alt="uipath" class="tech-icon">
+                        <!-- outros ícones de tecnologia conforme necessário -->
+                    </div>
+                    <a href="#" class="button">Confira!</a> <a href="https://github.com/luishenriquetrichez?tab=repositories" target="_blank" class="social-button github"
+                    onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-image">
+                    <img src="REINF.jpg" alt="Descrição do Projeto 2">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Robo automatizador envio REINF</h3>
+                    <p>O Robô Automatizador de Envio de REINF é uma solução revolucionária que substitui o trabalho manual. Utilizando uma tabela do Excel pré-preenchida, o robô extrai os dados necessários e realiza o envio de forma automática. Além disso, ele armazena os recibos essenciais e atualiza a tabela automaticamente, simplificando e agilizando todo o processo. Essa ferramenta não só elimina erros humanos, mas também otimiza significativamente o tempo e os recursos, proporcionando uma gestão mais eficiente e precisa das obrigações fiscais.</p>
+                    <div class="project-tech-icons">
+                        <img src="OIP.jpg" alt="CSS3" class="tech-icon">
+                        <img src="b924e3e38ede4aeb9f7157855d8c0ea5.png" alt="HTML5" class="tech-icon">
+                        <!-- outros ícones de tecnologia conforme necessário -->
+                    </div>
+                    <a href="#" class="button">Confira!</a> <a href="https://github.com/luishenriquetrichez?tab=repositories" target="_blank" class="social-button github"
+                    onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-image">
+                    <img src="SPED.jpg" alt="Descrição do Projeto 2">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Gerado de arquivo para importação NFP  </h3>
+                    <p>Onteriormente, o processo de reunir e lançar nota por nota era moroso e propenso a erros. Com esse algoritmo, somos capazes de agilizar e simplificar essa tarefa de maneira extraordinária.
+
+                        Ao utilizar o algoritmo, podemos extrair rapidamente as informações necessárias das notas fiscais paulistas e gerar um arquivo contendo todas elas. Essa abordagem elimina completamente a necessidade de lançamento manual, economizando tempo e recursos preciosos.</p>
+                    <div class="project-tech-icons">
+                         <img src="logopython.jpg" alt="python" class="tech-icon">
+                        <img src="selenium.jpg" alt="selenium" class="tech-icon">
+                        <img src="b924e3e38ede4aeb9f7157855d8c0ea5.png" alt="openxl" class="tech-icon">
+                    </div>
+                    <a href="#" class="button">Confira!</a> <a href="https://github.com/luishenriquetrichez?tab=repositories" target="_blank" class="social-button github"
+                    onmouseover="moveButton(this)" onmouseout="resetButton(this)"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-image">
+                    <img src="DESTDA.jpg" alt="Descrição do Projeto 2">
+                </div>
+            </div>
+        
+        </section>
+
+
+
+        <section id="education" class="education-section">
+            <div class="education-top">
+                <!-- Três blocos superiores -->
+                <div class="education-block">
+                    <h3 id="titulo_educ">Atitus Educação</h3>
+                    <hr id="linhaSub">
+                    <h4 id="sub_tit"> 2023/2027 | Em andamento Ciencias da Computação</h4>
+                    <p>Atualmente, estou cursando Ciência da Computação, onde explorei desde os fundamentos da programação até conceitos avançados de inteligência artificial. Desenvolvi habilidades analíticas e críticas essenciais, enquanto explorava áreas como segurança da informação e desenvolvimento.</p>
+                    <img src="atitus.png" alt="Descrição da imagem">
+                </div>
+                <div class="education-block">
+                    <h3 id="titulo_educ">Udemy</h3>
+                    <hr id="linhaSub">
+                    <h4 id="sub_tit">2024 | 22 Horas Desenvolvedor Uipath RPA</h4>
+                    <p>Desenvolvedor UiPath habilidades essenciais para automação de processos. Este curso  me proporciona conhecimento prático em desenvolvimento de soluções robóticas, preparando-me para contribuir efetivamente na otimização de processos e no aumento da eficiência operacional das empresas.</p>
+                    <img src="udemy.jpg" alt="Descrição da imagem">
+                </div>
+                <div class="education-block">
+                    <h3 id="titulo_educ">Udemy</h3>
+                    <hr id="linhaSub">
+                    <h4 id="sub_tit">2024 | 22 Horas RPA Com Python</h4>
+                    <p>Participei de um curso sobre RPA com Python, onde explorei diversas bibliotecas voltadas para automação de processos. Aprendi a utilizar essas ferramentas para desenvolver soluções eficientes que automatizam tarefas repetitivas e aumentam a produtividade. Esse curso me proporcionou habilidades práticas em Python, capacitando-me a criar soluções inovadoras de automação para diversas áreas de atuação.</p>
+                    <img src="udemy.jpg" alt="Descrição da imagem">
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Nova seção -->
+        <section id="contato">
+            <h2 id="h2">Contato</h2>
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <hr id="lin">
+                <p><strong>E-mail:</strong> Luishenrique.triches@outlook.com</p>
+                <p><strong>Telefone:</strong> (55) 54991990714</p>
+            </div>
+            <div class="social-media">
+                <h3>Redes Sociais</h3>
+                <hr id="lin">
+                <ul>
+                    <li><a href="https://br.linkedin.com/in/luis-henrique-trichez-4282061a2"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/luishenriquetrichez"><i class="fab fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+            <div class="impact-message">
+                <p>Entre em contato e vamos trabalhar juntos para transformar suas ideias em realidade!</p>
+            </div>
+        </section>
+        
+        
+
+        </div>
+    </main>
+<script src="script1.js"></script>
+</body>
+
+</html>

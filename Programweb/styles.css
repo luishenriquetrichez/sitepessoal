@@ -1,0 +1,739 @@
+/*Corpo do site */
+body  {
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+ /* Barra Laterar FIXA */
+aside {
+    background-color: #313338;
+    color: rgb(242, 242, 242);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Coloca o botão no final da barra lateral */
+.dark-mode {
+    margin-top: auto; 
+    margin-bottom: 20px; 
+}
+
+.dark-mode button {
+    color: rgb(255, 255, 255);
+    background-color: #404eed;
+    border: none;
+    padding: 15px 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace;;
+}
+/* Animação ao passar com o mouse em cima do botão Dark */
+.dark-mode button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*Imagem de Perfil */
+.profile-photo img {
+    width: 130px; 
+    height: auto; 
+    border: 3px solid rgb(232, 232, 232); 
+    border-radius: 80%; 
+    margin-top: 30px;
+    
+}
+
+/* Linha do Aside que separa a foto e os botões */
+#div_linha {
+    margin-top: 18px; 
+    margin-bottom: -5px; 
+    width: 100%; 
+    text-align: center; /
+}
+
+#div_linha p {
+    margin: 0; 
+    border-top: 0.5px solid #fff; 
+    padding-top: 10px; 
+}
+
+/* Botões Aside interação */
+nav ul li a.hovered {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+    transform: translateX(5px); 
+}
+
+
+/* Adiciona margem acima da lista de botões */
+nav {
+    margin-top: 20px; 
+}
+
+/* Remove os marcadores de lista */
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+ /* Remove as margens padrão dos itens da lista */
+nav ul li {
+    margin: 20;/
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 20px; 
+    display: flex; 
+    align-items: center; 
+    transition: all 0.3s ease; 
+    margin-left: -10px;
+    font-weight: normal; 
+}
+
+nav ul li a i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Arredondamento da borda ao passar o mouse */
+    transform: translateX(5px); /* Movimento para a direita ao passar o mouse */
+}
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: translateX(5px);
+}
+
+
+main {
+    /* Seus estilos existentes */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #ffffff;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo for maior que a altura da janela */
+    /* Adicione uma sombra à esquerda para criar a separação entre o aside e o main */
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+}
+#about-section {
+    margin-top: 0; /* Remover a margem superior */
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    padding: 20px;
+    /* mantenha o resto do estilo */
+}
+
+#about {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    text-align: left; /* Alinhamento do texto */
+    padding: 20px; /* Preenchimento interno */
+    margin-top: -20px; /* Margem superior */
+    
+}
+
+.about-section {
+    height: 100%; /* Defina a altura da seção "About" como a altura da janela */
+    /* Adicione outros estilos conforme necessário */
+}
+
+.about-section .full-width-block {
+    height: 100%; /* O bloco ocupará toda a altura da seção "About" */
+    width: calc(100% - 40px); /* Calcula a largura menos o padding do main */
+    padding: 20px; /* Adicione padding conforme necessário */
+    background-color: #ffffff; /* Cor de fundo do bloco */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    /* Adicione outros estilos conforme necessário */
+}
+
+#site_desenvolvido {
+    position: absolute; /* Define o posicionamento absoluto */
+    bottom: 0; /* Posiciona o elemento no final do bloco */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 15px; /* Tamanho da fonte */
+}
+
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid #313338; /* Cor da seta */
+    margin-left: 200px; /* Espaçamento entre o texto e a seta */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    animation: jump 1s infinite alternate, blink 1s infinite alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+#myName {
+    text-shadow: 4px 4px 4px rgba(102, 161, 255, 0.5); /* Adiciona uma sombra ao texto */
+}
+
+
+.name {
+    color: #404eed; /* Cor do nome */
+    font-weight: 700; /* Peso da fonte para o nome */
+    border-bottom: 1px solid #ccc; /* Linha inferior */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Move para cima */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move para a posição normal */
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1.5s forwards; /* Aplica a animação */
+}
+
+.social-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    background-color: #0077B5; /* Cor do LinkedIn */
+    margin: 0 -2px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para a sombra */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra interna */
+}
+
+.social-button.github {
+    background-color: #333; /* Cor do GitHub */
+}
+
+.social-button:hover {
+    background-color: #005f91; /* Cor do LinkedIn no hover */
+}
+
+.social-button.github:hover {
+    background-color: #24292e; /* Cor do GitHub no hover */
+}
+
+.social-button.hovered {
+    transform: translateX(5px); /* Movimento para a direita ao passar o mouse */
+}
+
+
+
+.other-buttons {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-me-button,
+.read-more-button {
+    color: #fff;
+    background-color: #404eed;
+    border: none;
+    padding: 15px 20px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave para a cor de fundo e para o movimento */
+    margin: 0 -2px;
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace; /* Define a mesma fonte do resto do site */
+}
+.contact-me-button:hover,
+.read-more-button:hover {
+    background-color: #313338; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.other-buttons button {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o movimento */
+}
+
+.other-buttons button.hovered {
+    transform: translateX(5px); /* Move o botão para a direita ao passar o mouse */
+}
+
+section {
+    position: relative; /* Define a posição relativa para os elementos dentro da seção */
+}
+
+#personal-site {
+    margin-top: 300px; /* Adiciona um espaçamento acima do texto */
+    color: #333; /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace;  /* Define a fonte */
+    text-align: left; /* Centraliza o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #404eed;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão esteja sempre acima de outros elementos */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background-color: #313338;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.jump-animation {
+    animation: jump 0.5s ease-in-out; /* Duração da animação e tipo de função de temporização */
+}
+
+.scroll-down-arrow-container {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.scroll-down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #fff;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+.experience-description {
+    display: flex;
+    height: 100%; /* Altura total da seção */
+    
+}
+
+#texto_minha_exp{
+    font-style: normal;
+    color: #646464;
+    font-size: 20px;
+}
+.my-experience {
+    flex: 1; /* Ocupa 1/3 da largura total */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.experience-heading {
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Arredonda as bordas */
+    color:#333; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-left: 35px;
+    font-size: 23px;
+    
+}
+
+.experience-heading h2 {
+    margin: 0; /* Remove margem do h2 */
+    line-height: 1.2; /* Espaçamento entre linhas */
+}
+.experiences {
+    flex: 2; /* Ocupa 2/3 da largura total */
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.experience-content {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    
+    border-color: #404eed;
+
+}
+
+.experience-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.experience-text h3,
+.experience-text h4,
+.experience-text p {
+    margin: 0;
+}
+
+.experience-info img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Adiciona espaço à direita da imagem */
+    width: 250px;
+    margin-left: 20px;
+
+}
+    
+
+#sub_experiencia {
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace;
+    color: #404eed;
+    margin-bottom: 10px;
+}
+
+#texto_experiencias{
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+}
+
+#h3_exp{
+    color: #333;
+}
+
+#data_experiencias{
+    font-weight: normal;
+    font-size: 13px;
+    color: #646464;
+}
+
+#linha_exp{
+    width: 200px;
+    margin-left: 0px;
+    border-bottom: 0.2px solid #ccc;
+
+}
+
+#description {
+    display: inline-block;
+    border-right: 2px solid #000;
+    padding-right: 3px; /* Espaçamento para simular o cursor de digitação */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde o texto que está sendo digitado */
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+#auto_mot {
+    margin-top: 1px;
+}
+
+#featured-projects {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  #featured-projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    margin-top: 150px;
+  }
+  
+  .project:nth-child(odd) .project-content {
+    order: 2;
+  }
+  
+  .project-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .project{
+    padding-top: 90px;
+    margin-top: 10px;
+  }
+
+  .experience-description{
+    margin-bottom: 120px;
+  }
+  
+  .project-image img {
+    width: 450px; /* ou o tamanho que você preferir */
+    height: 250px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .project-content {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .project h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .project p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .project-tech-icons {
+    margin-top: 10px;
+  }
+  
+  .tech-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #313338;
+    transition: transform 0.3s ease;
+  }
+  
+ .button button.hovered{
+    transform: translateX(5px);
+ }
+
+
+
+.education-top,
+.education-bottom {
+    display: flex; /* Exibe os blocos em linha */
+    justify-content: space-between; /* Espaçamento igual entre os blocos */
+    margin-bottom: 20px; /* Espaçamento entre os blocos superior e inferior */
+}
+
+.education-block {
+    flex: 0 0 calc(33.33% - 10px); /* Cada bloco ocupará cerca de 1/3 do espaço disponível */
+    margin-bottom: 20px; /* Espaçamento entre os blocos */
+    /* Outros estilos existentes */
+}
+
+.education-block:last-child {
+    margin-bottom: 0; /* Remove a margem inferior do último bloco em cada linha */
+}
+
+#sub_tit{
+    color: #666;
+}
+
+#linhaSub{
+    width: 200px;
+    margin-left: 0px;
+}
+
+.education-block img {
+    width: 400px; /* Largura padrão */
+    height: 150px; /* Altura padrão */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e preencha o espaço especificado */
+    margin-left: auto; /* Alinha a imagem à direita */
+}
+
+#contato {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+#h2{
+    font-size: 33px;
+}
+.contact-info,
+.social-media{
+    margin-bottom: 30px;
+}
+
+.contact-info p
+ {
+    margin-left: 30px;
+}
+
+.contact-info h3,
+.social-media h3,
+.impact-message p {
+    color: #404eed;
+    font-size: 28px;
+}
+
+.contact-info p,
+.social-media ul {
+    font-size: 23px;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.social-media ul li a {
+    color: #313338;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 25px;
+    
+}
+
+.social-media ul li a i {
+    margin-right: 10px;
+}
+
+.social-media ul li a:hover {
+    color: #313338;
+}
+
+.impact-message p{
+    color: #313338;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#lin {width: 250px;
+margin-left: 0px;}
+
+/* Adicione esses estilos */
+#dark-mode-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dark-mode-content {
+    text-align: center;
+    color: #fff;
+}
+
+.dark-mode-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dark-mode-content p {
+    font-size: 24px;
+    font-family: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+    'Courier New', Courier, monospace;;
+}
+
+.dark-mode-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #404eed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-content button:hover {
+    background-color: #313338;
+}
